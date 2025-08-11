@@ -4,10 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Evobotics – SunSpin Scout & Planter</title>
-  <meta name="description" content="Evobotics builds SunSpin Scout (garden robot) and SunSpin Planter (rotating vertical planter). Join the waitlist and learn more." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
   <style>
+    html { scroll-behavior: smooth; }
+
     :root{
       --bg:#0b0f14;
       --primary:#7df9a5;
@@ -55,7 +56,6 @@
     .video-grid iframe{width:100%;aspect-ratio:16/9;border-radius:12px;border:1px solid var(--stroke);box-shadow:var(--shadow)}
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
     .feature{padding:18px;border:1px dashed var(--stroke);border-radius:16px;background:rgba(255,255,255,.03)}
-    /* Forms */
     .waitlist{margin-top:28px; display:grid; gap:16px; justify-items:center}
     .form-row{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center; width:100%; max-width:560px}
     input[type=email]{padding:14px 16px;border-radius:12px;border:1px solid var(--stroke);background:rgba(255,255,255,.04);color:var(--white);outline:none;width:100%}
@@ -74,6 +74,7 @@
       <div>
         <a href="#media">Videos</a>
         <a href="#investors">Investors</a>
+        <a href="#contact">Contact Us</a>
         <a class="btn btn-primary" href="#waitlist">Join Waitlist</a>
       </div>
     </div>
@@ -120,11 +121,9 @@
           <p class="lead"><span class="highlight">Planter</span> 70M U.S. gardening households; 3% adoption by 2030 ≈ $630M hardware sales + $126M subscription revenue.<br><span class="highlight">Robot</span> 80–100M yard‑owning households; 3% penetration ≈ $7.2–9B hardware + $432–540M subscription revenue.</p>
         </div>
       </div>
-
-      <!-- Investor pitch deck request form -->
       <div class="waitlist" style="margin-top:36px">
         <p class="lead" style="text-align:center; margin-top:0">Enter your email to receive our latest investor deck and updates.</p>
-	<form id="investorForm" class="form-row" method="POST" data-endpoint="https://formspree.io/f/xpwlkndq">
+        <form id="investorForm" class="form-row" method="POST" data-endpoint="https://formspree.io/f/investor-form-id">
           <input type="email" name="email" placeholder="Your email address" required>
           <button class="btn btn-primary" type="submit">Request Deck</button>
         </form>
@@ -138,12 +137,23 @@
       <h2 class="section-title">Join the Waitlist</h2>
       <p class="lead" style="text-align:center">Get early access invites, pilot program opportunities, and launch discounts.</p>
       <div class="waitlist">
-        <form id="waitlistForm" class="form-row" method="POST" data-endpoint="https://formspree.io/f/movlybjq">
+        <form id="waitlistForm" class="form-row" method="POST" data-endpoint="https://formspree.io/f/your-form-id">
           <input type="email" name="email" placeholder="Your email address" required>
           <button class="btn btn-primary" type="submit">Join</button>
         </form>
         <div id="formStatus" class="lead" style="display:none;"></div>
       </div>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="lead" style="text-align:center">
+        For inquiries, partnerships, and investor relations, email us at
+        <a href="mailto:contact@evobotics.ai" style="color: var(--primary); text-decoration: none;">contact@evobotics.ai</a>.
+      </p>
     </div>
   </section>
 
@@ -153,7 +163,7 @@
         <a href="#media">Videos</a>
         <a href="#investors">Investors</a>
       </div>
-      <div>© 2025 Evobotics Inc. • San Diego, CA</div>
+      <div>© 2025 Evobotics Inc. • San Diego, CA • <a href="mailto:contact@evobotics.ai" style="color:var(--accent);text-decoration:none">contact@evobotics.ai</a></div>
     </div>
   </footer>
 
